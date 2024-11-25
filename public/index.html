@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/resource/image/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web Resmi Teh Herbal Metto"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/resource/image/favicon.jpeg" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    
+    <title>Metto Official || Herbal Tea</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+  <body class="bg-slate-50">
+        <!-- Whatsapp Button -->
+        <div class="lg:opacity-100 opacity-0 sticky left-[75%] top-[85%] lg:left-[95%] lg:top-[90%] z-20 w-0 h-0 f-wa transition-all duration-150 cursor-pointer" onclick="window.open('https://wa.me/6288989855467', '_blank')">
+          <svg class="size-14" viewBox="-1.5 0 259 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M67.6631045,221.823373 L71.8484512,223.916047 C89.2873956,234.379413 108.819013,239.262318 128.350631,239.262318 L128.350631,239.262318 C189.735716,239.262318 239.959876,189.038158 239.959876,127.653073 C239.959876,98.3556467 228.101393,69.7557778 207.17466,48.8290445 C186.247927,27.9023111 158.345616,16.0438289 128.350631,16.0438289 C66.9655467,16.0438289 16.7413867,66.2679889 17.4389445,128.350631 C17.4389445,149.277365 23.7169645,169.50654 34.1803311,186.945485 L36.9705622,191.130831 L25.8096378,232.28674 L67.6631045,221.823373 Z" fill="#00E676"> </path> <path d="M219.033142,37.66812 C195.316178,13.2535978 162.530962,0 129.048189,0 C57.8972956,0 0.697557778,57.8972956 1.39511556,128.350631 C1.39511556,150.67248 7.67313556,172.296771 18.1365022,191.828389 L0,258.096378 L67.6631045,240.657433 C86.4971645,251.1208 107.423898,256.003705 128.350631,256.003705 L128.350631,256.003705 C198.803967,256.003705 256.003705,198.106409 256.003705,127.653073 C256.003705,93.4727423 242.750107,61.3850845 219.033142,37.66812 Z M129.048189,234.379413 L129.048189,234.379413 C110.214129,234.379413 91.380069,229.496509 75.3362401,219.7307 L71.1508934,217.638027 L30.6925422,228.101393 L41.1559089,188.3406 L38.3656778,184.155253 C7.67313556,134.628651 22.3218489,69.05822 72.5460089,38.3656778 C122.770169,7.67313556 187.643042,22.3218489 218.335585,72.5460089 C249.028127,122.770169 234.379413,187.643042 184.155253,218.335585 C168.111425,228.798951 148.579807,234.379413 129.048189,234.379413 Z M190.433273,156.9505 L182.760138,153.462711 C182.760138,153.462711 171.599213,148.579807 164.623636,145.092018 C163.926078,145.092018 163.22852,144.39446 162.530962,144.39446 C160.438289,144.39446 159.043173,145.092018 157.648058,145.789576 L157.648058,145.789576 C157.648058,145.789576 156.9505,146.487133 147.184691,157.648058 C146.487133,159.043173 145.092018,159.740731 143.696902,159.740731 L142.999345,159.740731 C142.301787,159.740731 140.906671,159.043173 140.209113,158.345616 L136.721325,156.9505 L136.721325,156.9505 C129.048189,153.462711 122.072611,149.277365 116.492149,143.696902 C115.097033,142.301787 113.00436,140.906671 111.609245,139.511556 C106.72634,134.628651 101.843436,129.048189 98.3556467,122.770169 L97.658089,121.375053 C96.9605312,120.677496 96.9605312,119.979938 96.2629734,118.584822 C96.2629734,117.189707 96.2629734,115.794591 96.9605312,115.097033 C96.9605312,115.097033 99.7507623,111.609245 101.843436,109.516571 C103.238551,108.121456 103.936109,106.028782 105.331225,104.633667 C106.72634,102.540993 107.423898,99.7507623 106.72634,97.658089 C106.028782,94.1703001 97.658089,75.3362401 95.5654156,71.1508934 C94.1703001,69.05822 92.7751845,68.3606623 90.6825112,67.6631045 L88.5898378,67.6631045 C87.1947223,67.6631045 85.1020489,67.6631045 83.0093756,67.6631045 C81.6142601,67.6631045 80.2191445,68.3606623 78.8240289,68.3606623 L78.1264712,69.05822 C76.7313556,69.7557778 75.3362401,71.1508934 73.9411245,71.8484512 C72.5460089,73.2435667 71.8484512,74.6386823 70.4533356,76.0337978 C65.5704312,82.3118178 62.7802,89.9849534 62.7802,97.658089 L62.7802,97.658089 C62.7802,103.238551 64.1753156,108.819013 66.2679889,113.701918 L66.9655467,115.794591 C73.2435667,129.048189 81.6142601,140.906671 92.7751845,151.370038 L95.5654156,154.160269 C97.658089,156.252942 99.7507623,157.648058 101.145878,159.740731 C115.794591,172.296771 132.535978,181.365022 151.370038,186.247927 C153.462711,186.945485 156.252942,186.945485 158.345616,187.643042 L158.345616,187.643042 C160.438289,187.643042 163.22852,187.643042 165.321193,187.643042 C168.808982,187.643042 172.994329,186.247927 175.78456,184.852811 C177.877233,183.457696 179.272349,183.457696 180.667465,182.06258 L182.06258,180.667465 C183.457696,179.272349 184.852811,178.574791 186.247927,177.179676 C187.643042,175.78456 189.038158,174.389445 189.735716,172.994329 C191.130831,170.204098 191.828389,166.716309 192.525947,163.22852 C192.525947,161.833405 192.525947,159.740731 192.525947,158.345616 C192.525947,158.345616 191.828389,157.648058 190.433273,156.9505 Z" fill="#FFFFFF"> </path> </g> </g></svg>        
+        </div>
+        <!-- Whatsapp Button End -->
+
+     <!-- Navbar -->
+    <nav class="m-auto flex flex-row bg-green-700 items-center justify-between p-6 lg:px-20 sticky top-0 z-10 nav">
+      <div class="flex h-full">
+        <img src="resource/image/metto logo white.png" alt="Header Metto Logo" class="h-6 nav_logo">
+      </div>
+      <div class="flex h-full">
+        <img src="resource/image/Deskripsi Metto white.png" alt="deskripsiiii" class="h-6 nav_desc">
+      </div>
+  </nav>
+  <!-- Navbar End-->
+
+  <!-- Hero -->
+  <div class="flex flex-col-reverse lg:flex-row bg-green-700 w-full py-14 px-10 lg:px-52 justify-center">
+    <div class="flex flex-col py-16 justify-center w-full lg:w-2/3">
+    <div class="flex flex-col justify-center h-full">
+      <div class="text-white font-bold text-4xl lg:text-7xl">
+        <h1>Tingkatkan Omset Bisnis Anda dengan Metto!</h1>
+      </div>
+      <div class="text-white text-xl mt-5">
+        <span>Produk Slimming Tea dengan Margin Laba Menggiurkan</span>
+      </div>
+    </div>
+    <div class="flex flex-row items-center justify-center w-full lg:w-[25vw] mt-5 p-3 bg-yellow-500 h-1/6 lg:h-1/5 rounded-full gap-2 cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-500" onclick="window.open('https://wa.me/6288989855467', '_blank');">
+      <span class="w-4/5 text-white text-base text-center">Jadilah Mitra Bisnis Kami dan Rasakan Keuntungannya!</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFFFFF" class="size-6">
+        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+      </svg>      
+    </div>
+  </div>
+    <div class="flex justify-center items-center hero_img">
+      <img src="resource/image/metto_hero.png" alt="Metto product hero" class="w-full">
+    </div>
+  </div>
+  <div class="flex flex-col justify-start overflow-x-hidden">
+    <div class="flex flex-row object-cover waves" style="width: 400%;">
+    <img src="resource/image/wave.svg" class="w-full tw">
+    <img src="resource/image/wave.svg" class="w-full tw">
+    <img src="resource/image/wave.svg" class="w-full tw">
+    <img src="resource/image/wave.svg" class="w-full tw">
+  </div>
+</div>
+  <!-- Hero End -->
+  
+  <!-- Description 1 -->
+  <div class="flex flex-col w-full px-10 lg:px-52 py-28">
+    <div class="flex flex-row items-center text-lg mt-5 gap-10 text-justify w-full">
+      <img src="resource/image/yawing.png" alt="Image by asierromero on Freepik" class="w-1/6 hidden lg:block">
+      <div class="flex flex-col gap-5">
+    <div class="text-5xl font-bold text-slate-800 w-full lg:w-4/5">
+      <h1>Bosan Dengan Produk Yang Itu-Itu Saja?</h1>
+    </div>
+      <p class="w-full lg:w-4/5">Ingin meningkatkan omset bisnis Anda dengan produk yang trendnya tidak pernah turun? <strong>Metto Senna Leaf </strong>dan <strong>Metto Slimming</strong> adalah jawabannya!
+      Sebagai pengusaha herbal & skincare dan penjual online, Anda pasti paham betul pentingnya produk yang berkualitas dan memiliki permintaan pasar yang tinggi. Metto menawarkan keduanya! Dengan <strong>margin laba yang sangat menarik</strong> dan <strong>tren slimming tea yang terus meningkat</strong>, Metto adalah peluang emas untuk mengembangkan bisnis Anda.</p>
+    </div>
+  </div>
+  </div>
+  <!-- Description 1 End -->
+
+  <!-- Card 1 -->
+  <div class="flex flex-col w-full px-10 lg:px-52 pt-10 items-center bg-white">
+    <div class="text-5xl font-bold text-slate-800">
+      <h1>Mengapa Memilih Metto?</h1>
+    </div>
+      <div class="flex flex-col lg:flex-row justify-center pt-10 lg:pt-16 p-0 lg:p-16 w-full gap-5">
+        <div class="flex flex-col items-center border-2 rounded-xl w-full lg:w-1/5 text-center p-3 hover:shadow-lg hover:scale-105 transition-all duration-1000">
+          <div class="my-10">
+            <img src="resource/image/upgrade.svg" alt="upgrade icon" class="size-36">
+          </div>
+            <span class="font-bold text-xl mb-1">Margin Laba Tinggi</span>          
+            <p>Dapatkan keuntungan yang lebih besar dengan setiap penjualan.</p>          
+        </div>
+        <div class="flex flex-col items-center border-2 rounded-xl w-full lg:w-1/5 text-center p-3 hover:shadow-lg hover:scale-105 transition-all duration-1000">
+          <div class="my-10">
+            <img src="resource/image/quality.svg" alt="quality icon" class="size-36">
+          </div>
+            <span class="font-bold text-xl mb-1">Produk Berkualitas</span>          
+            <p>Formulasi alami yang aman dan efektif. Bersertifikat BPOM & Halal.</p>          
+        </div>
+        <div class="flex flex-col items-center border-2 rounded-xl w-full lg:w-1/5 text-center p-3 hover:shadow-lg hover:scale-105 transition-all duration-1000">
+          <div class="my-10">
+            <img src="resource/image/trend.svg" alt="trend icon" class="size-36">
+          </div>
+            <span class="font-bold text-xl mb-1">Permintaan Pasar Tinggi</span>          
+            <p>Manfaatkan tren slimming tea yang terus meningkat.</p>          
+        </div>
+        <div class="flex flex-col items-center border-2 rounded-xl w-full lg:w-1/5 text-center p-3 hover:shadow-lg hover:scale-105 transition-all duration-1000">
+          <div class="my-10">
+            <img src="resource/image/support.svg" alt="support icon" class="size-40">
+          </div>
+            <span class="font-bold text-xl mb-1">Dukungan Marketing</span>          
+            <p>Kami akan membantu Anda mempromosikan produk Metto.</p>          
+        </div>
+        <div class="flex flex-col items-center border-2 rounded-xl w-full lg:w-1/5 text-center p-3 hover:shadow-lg hover:scale-105 transition-all duration-1000">
+          <div class="my-10">
+            <img src="resource/image/market.svg" alt="market icon" class="size-40">
+          </div>
+            <span class="font-bold text-xl mb-1">Target Pasar Luas</span>          
+            <p>Produk kami cocok untuk berbagai kalangan, dari remaja hingga dewasa.</p>          
+        </div>
+      </div>
+  </div>
+  
+  <!-- Card 1 End -->
+  
+  <!-- List -->
+  <div class="flex flex-col w-full px-10 lg:px-52 pt-10">
+    <div class="text-5xl font-bold text-slate-800">
+      <h1>Gabung Sekarang dan Dapatkan:</h1>
+    </div>
+    <div class="flex flex-row gap-2 items-center">
+    <div class="hidden lg:block containter w-1/4">
+      <img src="resource/image/METTO SLIMMING TEA mock up.png" alt="Mockup Metto Slimming Tea">
+    </div>
+    <div class="flex flex-col gap-5 my-10 lg:my-16 text-xl font-semibold w-full lg:w-1/2 ">
+        <div class="p-2 border-2 border-green-400 hover:scale-105 hover:border-0 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000 rounded-xl cursor-default">
+          <span>HARGA GROSIR SPESIAL</span>
+        </div>
+        <div class="p-2 border-2 border-green-400 hover:scale-105 hover:border-0 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000 rounded-xl cursor-default">
+          <span>MATERI MARKETING GRATIS </span>
+        </div>
+        <div class="p-2 border-2 border-green-400 hover:scale-105 hover:border-0 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000 rounded-xl cursor-default">
+          <span>KONSULTASI BISNIS</span>
+        </div>
+    </div>
+  </div>
+</div>
+  <!-- List End -->
+
+  <!-- Whatsapp -->
+  <div class="flex flex-col w-full px-10 lg:px-64 py-10 items-center bg-green-700 gap-5">
+    <div class="text-4xl font-bold text-white text-center">
+      <h1>JADILAH YANG PERTAMA MENJADI DISTRIBUTOR, AGEN & RESELLER KAMI DI KOTA ANDA. SELURUH INDONESIA. AMBIL KESEMPATAN LANGKA INI SEBELUM DIAMBIL ORANG LAIN!</h1>
+    </div>
+    <div class="flex flex-row items-center justify-center mt-5 p-3 bg-yellow-500 h-1/5 w-full lg:w-1/5 rounded-full gap-2 cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-500" onclick="window.open('https://wa.me/6288989855467', '_blank');">
+      <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" class="size-6"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>whatsapp [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7599.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M259.821,7453.12124 C259.58,7453.80344 258.622,7454.36761 257.858,7454.53266 C257.335,7454.64369 256.653,7454.73172 254.355,7453.77943 C251.774,7452.71011 248.19,7448.90097 248.19,7446.36621 C248.19,7445.07582 248.934,7443.57337 250.235,7443.57337 C250.861,7443.57337 250.999,7443.58538 251.205,7444.07952 C251.446,7444.6617 252.034,7446.09613 252.104,7446.24317 C252.393,7446.84635 251.81,7447.19946 251.387,7447.72462 C251.252,7447.88266 251.099,7448.05372 251.27,7448.3478 C251.44,7448.63589 252.028,7449.59418 252.892,7450.36341 C254.008,7451.35771 254.913,7451.6748 255.237,7451.80984 C255.478,7451.90987 255.766,7451.88687 255.942,7451.69881 C256.165,7451.45774 256.442,7451.05762 256.724,7450.6635 C256.923,7450.38141 257.176,7450.3464 257.441,7450.44643 C257.62,7450.50845 259.895,7451.56477 259.991,7451.73382 C260.062,7451.85686 260.062,7452.43903 259.821,7453.12124 M254.002,7439 L253.997,7439 L253.997,7439 C248.484,7439 244,7443.48535 244,7449 C244,7451.18666 244.705,7453.21526 245.904,7454.86076 L244.658,7458.57687 L248.501,7457.3485 C250.082,7458.39482 251.969,7459 254.002,7459 C259.515,7459 264,7454.51465 264,7449 C264,7443.48535 259.515,7439 254.002,7439" id="whatsapp-[#ffffff]"> </path> </g> </g> </g> </g></svg>  
+      <span class="text-white text-lg font-bold text-center">Hubungi Kami!</span>
+    </div>
+  </div>
+  <!-- Whatsapp End -->
+
+  <!-- Aduh Kaki Saya Sakit -->
+  <div class="flex flex-col w-full px-10 lg:px-52 py-10 items-center">
+    <div class="text-5xl font-bold text-slate-800">
+      <h1>Apa Kata Mereka</h1>
+    </div>
+    <div class="flex flex-col justify-center items-center p-10">
+    <div class="flex flex-col lg:flex-row justify-center py-5 w-full gap-5">
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup2(this.childNodes[1].src)">
+        <img src="/resource/testimoni/1.jpeg" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup2(this.childNodes[1].src)">
+        <img src="/resource/testimoni/2.jpeg" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup2(this.childNodes[1].src)">
+        <img src="/resource/testimoni/3.jpeg" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup2(this.childNodes[1].src)">
+        <img src="/resource/testimoni/4.jpeg" alt="upgrade icon" class="rounded-xl">
+    </div>
+  </div>
+  </div>
+</div>
+  </div>
+  <!-- Kamu Diam -->
+
+  <!-- Mockup -->
+  <div class="flex flex-col w-full px-10 lg:px-52 py-10 items-center bg-white">
+    <div class="text-5xl font-bold text-slate-800">
+      <h1>Galeri Produk</h1>
+    </div>
+    <div class="flex flex-col justify-center items-center p-10">
+    <div class="flex flex-col lg:flex-row justify-center py-5 w-full gap-5">
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 1.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 2.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 3.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 4.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+  </div>
+    <div class="flex flex-col lg:flex-row justify-center py-2 w-full gap-5">
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 5.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 6.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 7.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+      <div class="flex flex-col items-center justify-center border-2 rounded-xl w-full lg:w-1/5 h-3/5 hover:shadow-lg hover:scale-105 transition-all duration-1000 cursor-pointer" onclick="popup(this.childNodes[1].src)">
+        <img src="/resource/mockup/mockup 8.png" alt="upgrade icon" class="rounded-xl">
+    </div>
+  </div>
+</div>
+  </div>
+  <!-- Mockup end -->
+  
+  <!-- FAQ -->
+  <div class="flex flex-col w-full px-10 lg:px-52 py-10 items-center">
+    <div class="text-5xl font-bold text-slate-800 p-10">
+      <h1>FAQ</h1>
+    </div>
+    <div class="flex flex-col w-full lg:w-9/12 gap-2">
+      <div class="p-3 border-2 border-green-400 rounded-xl flex flex-row cursor-pointer hover:border-green-700 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000" onclick="dropdown(this)">
+        <div class="w-4/5">
+        <span>Apakah Kandungan Metto Sesuai Hasil Uji Lab ?</span>
+      </div>
+      <div class="flex flex-row items-center justify-end w-1/5">
+        <img src="resource/image/dropdown-arrow.svg" class="size-6 transition-all duration-700">
+      </div>
+      </div>
+      <div class="overflow-hidden">
+      <div class="flex-col justify-center px-3 py-8 border-2 rounded-xl border-green-500 text-justify hidden" >
+        <p>
+          Metto rutin melakukan protokol uji lab rutin untuk memastikan kandungan komposisi akurat, sesuai dengan label kemasan.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="flex flex-col w-full lg:w-9/12 gap-2">
+      <div class="p-3 border-2 border-green-400 rounded-xl flex flex-row cursor-pointer hover:border-green-700 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000" onclick="dropdown(this)">
+        <div class="w-4/5">
+        <span>Metto Bisa Turunkan Berat Badan ? </span>
+      </div>
+      <div class="flex flex-row items-center justify-end w-1/5">
+        <img src="resource/image/dropdown-arrow.svg" class="size-6 transition-all duration-700">
+      </div>
+      </div>
+      <div class="overflow-hidden">
+      <div class="flex-col justify-center px-3 py-8 border-2 rounded-xl border-green-500 text-justify hidden" >
+        <p>
+          Metto tidak pernah mengklaim bisa menurunkan berat badan secara instant.<br>Namun Metto telah terbukti bisa membantu banyak konsumen kami untuk menurunkan berat badan diimbangi hidup sehat dan pola makan sehat. Penurunan berat badan yang dialami mereka terjadi secara natural dalam jangka panjang, bukan jangka pendek.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="flex flex-col w-full lg:w-9/12 gap-2">
+      <div class="p-3 border-2 border-green-400 rounded-xl flex flex-row cursor-pointer hover:border-green-700 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000" onclick="dropdown(this)">
+        <div class="w-4/5">
+        <span>Minum Metto Intensitas BAB Bertambah ?</span>
+      </div>
+      <div class="flex flex-row items-center justify-end w-1/5">
+        <img src="resource/image/dropdown-arrow.svg" class="size-6 transition-all duration-700">
+      </div>
+      </div>
+      <div class="overflow-hidden">
+      <div class="flex-col justify-center px-3 py-8 border-2 rounded-xl border-green-500 text-justify hidden" >
+        <p>
+          Efek Metto bisa meningkatkan frekuensi BAB secara aman dan alami.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="flex flex-col w-full lg:w-9/12 gap-2">
+      <div class="p-3 border-2 border-green-400 rounded-xl flex flex-row cursor-pointer hover:border-green-700 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000" onclick="dropdown(this)">
+        <div class="w-4/5">
+        <span>Cara Cek Keaslian Metto ?</span>
+      </div>
+      <div class="flex flex-row items-center justify-end w-1/5">
+        <img src="resource/image/dropdown-arrow.svg" class="size-6 transition-all duration-700">
+      </div>
+      </div>
+      <div class="overflow-hidden">
+      <div class="flex-col justify-center px-3 py-8 border-2 rounded-xl border-green-500 text-justify hidden" >
+        <p>
+          Silahkan buka <strong>(nunggu link Fix dari Irfin)</strong> dan ikuti step by step di halaman tersebut.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="flex flex-col w-full lg:w-9/12 gap-2">
+      <div class="p-3 border-2 border-green-400 rounded-xl flex flex-row cursor-pointer hover:border-green-700 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000" onclick="dropdown(this)">
+        <div class="w-4/5">
+        <span>Aturan pakai Metto ?</span>
+      </div>
+      <div class="flex flex-row items-center justify-end w-1/5">
+        <img src="resource/image/dropdown-arrow.svg" class="size-6 transition-all duration-700">
+      </div>
+      </div>
+      <div class="overflow-hidden">
+      <div class="flex-col justify-center px-3 py-8 border-2 rounded-xl border-green-500 text-justify hidden" >
+        <p>
+          <strong>Aturan Minum Metto Senna Leaf Mix Herba :</strong><br>Minum Metto Senna Leaf 2X sehari, 30 menit setelah makan pagi dan makan malam<br><strong>Aturan Minum Metto Slimming Tea :</strong><br>Minum Metto Slimming Tea 2X sehari, 30 menit setelah makan pagi dan makan malam<br><strong>OPTIMALKAN PROGRAM TURUNKAN OBESITAS DENGAN MINUM :</strong><br><ul class="marker:text-green-600 list-disc pl-5"><li>Metto senna leaf diminum 1x sehari, 30 menit setelah makan malam</li><li>Metto slimming tea diminum 2x sehari, 30 menit setelah makan pagi dan makan siang</li></ul>
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="flex flex-col w-full lg:w-9/12 gap-2">
+      <div class="p-3 border-2 border-green-400 rounded-xl flex flex-row cursor-pointer hover:border-green-700 hover:shadow-lg hover:bg-green-700 hover:text-white transition-all duration-1000" onclick="dropdown(this)">
+        <div class="w-4/5">
+        <span>Apakah Metto Aman Untuk Penderita Maag Atau Asam Lambung ?</span>
+      </div>
+      <div class="flex flex-row items-center justify-end w-1/5">
+        <img src="resource/image/dropdown-arrow.svg" class="size-6 transition-all duration-700">
+      </div>
+      </div>
+      <div class="overflow-hidden">
+      <div class="flex-col justify-center px-3 py-8 border-2 rounded-xl border-green-500 text-justify hidden" >
+        <p>
+          Metto Slimming Tea: Aman <br>Metto Senna Leaf Mix herba : Tidak disarankan dikonsumsi bagi penderita lambung.
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+  <!-- FAQ End -->
+  <!-- Form -->
+  <div class="flex flex-col w-full px-2 lg:px-52 py-10 items-start lg:items-center">
+    <div class="text-5xl font-bold text-slate-800 p-10">
+      <h1>Hubungi Kami</h1>
+    </div>
+    <div class="flex flex-row w-full lg:w-auto p-10">
+      <div class="flex justify-center items-center w-10/12 lg:w-1/3 lg:static absolute -z-20 overflow-hidden">
+        <img src="resource/image/contact.png" alt="Image by freepik">
+      </div>
+      <div class="flex flex-col w-11/12 lg:w-2/3 ml-2lg:ml-5 justify-center">
+        <form action="http://localhost:8080/pesan" class="flex flex-col" method="post" enctype="multipart/form-data" >
+          <span for="nama" class="my-2">Nama :</span>
+          <input type="text" name="nama" placeholder="Masukkan Nama Anda"  class="w-full p-2 rounded-lg focus:border-b-green-950 focus:border-b-2 focus:outline-none transition-all duration-700" required>
+          <span for="nomor" class="my-2">Nomor :</span>
+          <input type="number" name="nomor" placeholder="Masukkan Nomor Telepon / Whatsapp Anda"  class="w-full p-2 rounded-lg focus:border-b-green-950 focus:border-b-2 focus:outline-none transition-all duration-700" required>
+          <span for="email" class="my-2">Email :</span>
+          <input type="email" name="email" placeholder="Masukkan Alamat Email Anda"  class="w-full p-2 rounded-lg focus:border-b-green-950 focus:border-b-2 focus:outline-none transition-all duration-700" required>
+          <span for="pesan" class="my-2">Pesan :</span>
+          <textarea type="text" name="pesan" placeholder="Masukkan Pesan Anda"  class="w-full h-24 p-2 rounded-lg focus:border-b-green-950 focus:border-b-2 focus:outline-none transition-all duration-700 form_pesan" required></textarea>
+          <input type="submit" value="Submit" placeholder="Submit" class="p-3 bg-green-400 hover:bg-green-600 focus:bg-green-950 cursor-pointer my-6 rounded-xl w-full lg:w-1/5 text-white font-bold transition-all duration-700">
+        </form>
+      </div>
+    </div>
+</div>
+  
+  <!-- Form End -->
+  
+  <!-- Footer -->
+  <div class="flex flex-row justify-center py-3 items-center px-10">
+    <div class="flex flex-row w-1/2">
+      <span class="text-green-800 font-medium">Copyright © 2025 Metto Official</span>
+    </div>
+    <div class="flex flex-row w-1/2 gap-5 justify-end items-center">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-10 cursor-pointer" onclick="window.open('https://www.instagram.com/metto_official/', '_blank');"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7.90001C11.1891 7.90001 10.3964 8.14048 9.72218 8.59099C9.04794 9.0415 8.52243 9.68184 8.21211 10.431C7.90179 11.1802 7.8206 12.0046 7.9788 12.7999C8.13699 13.5952 8.52748 14.3258 9.10088 14.8992C9.67427 15.4725 10.4048 15.863 11.2001 16.0212C11.9955 16.1794 12.8198 16.0982 13.569 15.7879C14.3182 15.4776 14.9585 14.9521 15.409 14.2779C15.8596 13.6036 16.1 12.8109 16.1 12C16.1013 11.4612 15.9962 10.9275 15.7906 10.4295C15.585 9.93142 15.2831 9.47892 14.9021 9.09794C14.5211 8.71695 14.0686 8.415 13.5706 8.20942C13.0725 8.00385 12.5388 7.8987 12 7.90001ZM12 14.67C11.4719 14.67 10.9557 14.5134 10.5166 14.22C10.0776 13.9267 9.73534 13.5097 9.53326 13.0218C9.33117 12.5339 9.2783 11.9971 9.38132 11.4791C9.48434 10.9612 9.73863 10.4854 10.112 10.112C10.4854 9.73863 10.9612 9.48434 11.4791 9.38132C11.9971 9.2783 12.5339 9.33117 13.0218 9.53326C13.5097 9.73534 13.9267 10.0776 14.22 10.5166C14.5134 10.9557 14.67 11.4719 14.67 12C14.67 12.7081 14.3887 13.3873 13.888 13.888C13.3873 14.3887 12.7081 14.67 12 14.67ZM17.23 7.73001C17.23 7.9278 17.1714 8.12114 17.0615 8.28558C16.9516 8.45003 16.7954 8.57821 16.6127 8.65389C16.43 8.72958 16.2289 8.74938 16.0349 8.7108C15.8409 8.67221 15.6628 8.57697 15.5229 8.43712C15.3831 8.29727 15.2878 8.11909 15.2492 7.92511C15.2106 7.73112 15.2304 7.53006 15.3061 7.34733C15.3818 7.16461 15.51 7.00843 15.6744 6.89855C15.8389 6.78866 16.0322 6.73001 16.23 6.73001C16.4952 6.73001 16.7496 6.83537 16.9371 7.02291C17.1247 7.21044 17.23 7.4648 17.23 7.73001ZM19.94 8.73001C19.9691 7.48684 19.5054 6.28261 18.65 5.38001C17.7522 4.5137 16.5474 4.03897 15.3 4.06001C14 4.00001 10 4.00001 8.70001 4.06001C7.45722 4.0331 6.25379 4.49652 5.35001 5.35001C4.49465 6.25261 4.03093 7.45684 4.06001 8.70001C4.00001 10 4.00001 14 4.06001 15.3C4.03093 16.5432 4.49465 17.7474 5.35001 18.65C6.25379 19.5035 7.45722 19.9669 8.70001 19.94C10.02 20.02 13.98 20.02 15.3 19.94C16.5432 19.9691 17.7474 19.5054 18.65 18.65C19.5054 17.7474 19.9691 16.5432 19.94 15.3C20 14 20 10 19.94 8.70001V8.73001ZM18.24 16.73C18.1042 17.074 17.8993 17.3863 17.6378 17.6478C17.3763 17.9093 17.064 18.1142 16.72 18.25C15.1676 18.5639 13.5806 18.6715 12 18.57C10.4228 18.6716 8.83902 18.564 7.29001 18.25C6.94608 18.1142 6.63369 17.9093 6.37223 17.6478C6.11076 17.3863 5.90579 17.074 5.77001 16.73C5.35001 15.67 5.44001 13.17 5.44001 12.01C5.44001 10.85 5.35001 8.34001 5.77001 7.29001C5.90196 6.94268 6.10547 6.62698 6.36733 6.36339C6.62919 6.09981 6.94355 5.89423 7.29001 5.76001C8.83902 5.44599 10.4228 5.33839 12 5.44001C13.5806 5.33856 15.1676 5.44616 16.72 5.76001C17.064 5.89579 17.3763 6.10076 17.6378 6.36223C17.8993 6.62369 18.1042 6.93608 18.24 7.28001C18.66 8.34001 18.56 10.84 18.56 12C18.56 13.16 18.66 15.67 18.24 16.72V16.73Z" fill="#166534"></path> </g></svg>
+      <svg viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#166534" class="size-7 cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=100081286069893', '_blank');"><g id="SVGRepo_bgCarrier" stroke-width="0" ></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook [#176]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#166534"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"> </path> </g> </g> </g> </g></svg>
+    </div>
+  </div>
+  
+  <!-- Footer End -->
+
+  <!-- Wave Responsive -->
+  <script>
+    window.mobileCheck = function() {
+  let check = false;
+  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+  return check;
+  };
+    let waves = document.querySelector('.waves')
+    if (window.mobileCheck()) {
+      waves.classList.add('wave_mobile')
+    } else {
+      waves.classList.add('wave')
+    }
+    //window.innerHeight<911?waves.classList.add('wave_mobile'):waves.classList.add('wave')
+
+  </script>
+  <!-- Wave Responsive End -->
+
+  <!-- Scroll Control -->
+  <script>
+    const bg = document.querySelector('.nav')
+    const img_logo = document.querySelector('.nav_logo')
+    const img_desc = document.querySelector('.nav_desc')
+    const wa_btn = document.querySelector('.f-wa')
+    let stats = true
+    let stats2 = true
+    let stats23 = true
+    addEventListener('scroll', (event) => {
+      if(pageYOffset > 600 && stats) {
+        bg.classList.remove('bg-green-700')
+        bg.classList.add('bg-transparent')
+        img_logo.src = 'resource/image/metto logo.png'
+        img_desc.src = 'resource/image/Deskripsi Metto.png'
+        stats = false
+      } else if(pageYOffset < 600 && !stats) {
+        bg.classList.remove('bg-transparent')
+        bg.classList.add('bg-green-700')
+        img_logo.src = 'resource/image/metto logo white.png'
+        img_desc.src = 'resource/image/Deskripsi Metto white.png'
+        stats = true
+      }
+
+      if(pageYOffset > 200 && stats2) {
+        wa_btn.classList.remove('lg:top-[90%]')
+        wa_btn.classList.add('lg:top-[85%]')
+        stats2 = false
+      } else if (pageYOffset < 200 && !stats2) {
+        wa_btn.classList.add('lg:top-[90%]')
+        wa_btn.classList.remove('lg:top-[85%]')
+        stats2 = true
+      }
+
+      if(pageYOffset > 200 && stats23) {
+        wa_btn.classList.remove('opacity-0')
+        wa_btn.classList.add('opacity-100')
+        stats23 = false
+      } else if (pageYOffset < 200 && !stats23) {
+        wa_btn.classList.add('opacity-0')
+        wa_btn.classList.remove('opacity-100')
+        stats23 = true
+      }
+    })
+  </script>
+  <!-- Scroll Control End -->
+  <!-- Dropdown Control -->
+      <script>
+        function dropdown(element) {
+          console.log()
+          if (!element.nextSibling.nextSibling.childNodes[1].style.display || element.nextSibling.nextSibling.childNodes[1].style.display == 'none') {
+            element.nextSibling.nextSibling.childNodes[1].style.display = "flex"
+            element.nextSibling.nextSibling.childNodes[1].classList.add('dropdown')
+            element.nextSibling.nextSibling.childNodes[1].classList.remove('hidden')
+            element.childNodes[3].childNodes[1].style.transform = "rotate(180deg)"
+            element.parentElement.classList.add('mb-3')
+          } else {
+            element.nextSibling.nextSibling.childNodes[1].style.display = "none"
+            element.nextSibling.nextSibling.childNodes[1].classList.remove('dropdown')
+            element.nextSibling.nextSibling.childNodes[1].classList.add('hidden')
+            element.childNodes[3].childNodes[1].style.transform = "rotate(0deg)"
+            element.parentElement.classList.remove('mb-3')
+          }
+        }
+      </script>
+      <!-- Navbar Control End -->
+      <!-- Testi Pop Up Control -->
+       <script>
+       function popup2(img) {
+        Swal.fire({
+            showConfirmButton: false,
+            imageUrl: img,
+            background: `#fff url(${img})`,
+            imageWidth: 600,
+            imageHeight: 400,
+            showCloseButton: true
+          })
+
+        let container = document.querySelector('.swal2-popup')
+        container.style.height = '80vh'
+        container.style.width = '45vh'
+          
+       }
+      </script>
+      <!-- Testi Pop Up Control End -->
+      <!-- Gallery Pop Up Control -->
+       <script>
+       function popup(img) {
+          console.log(img)
+        Swal.fire({
+            showConfirmButton: false,
+            imageUrl: img,
+            background: `#fff url(${img})`,
+            imageWidth: 600,
+            imageHeight: 400,
+            showCloseButton: true
+          })
+          let container = document.querySelector('.swal2-popup')
+          container.style.height = window.innerHeight<911?'80vw':'80vh'
+          container.style.width = window.innerHeight<911?'80vw':'80vh'
+       }
+      </script>
+      <!-- Gallery Pop Up Control End -->
+</body>
+</html>

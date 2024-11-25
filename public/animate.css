@@ -1,0 +1,71 @@
+@keyframes hero_hover {
+    0%, 100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0%) rotate(180deg) translateY(0.5%);
+    }
+    100% {
+        transform: translateX(-25%) rotate(180deg) translateY(0.5%);
+    }
+}
+@keyframes wave_mobile {
+    0% {
+        transform: translateX(0vw) rotate(180deg) translateY(0.5%);
+    }
+    100% {
+        transform: translateX(-120vw) rotate(180deg) translateY(0.5%);
+    }
+}
+
+@keyframes dropdown{
+    0% {
+        transform: translateY(-105%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.hero_img {
+    animation: hero_hover 10s ease-in-out 0s infinite ;
+}
+
+.wave {
+    animation: wave 10s linear 0s infinite;
+}
+.wave_mobile {
+    animation: wave_mobile 10s linear 0s infinite;
+}
+
+.tw {
+    transform: scaleX(100.25%);
+}
+
+.nav {
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.dropdown {
+    animation: dropdown 1s ease-in-out 0s;
+}
+
+.swal2-image{
+    opacity: 0%;
+}
+
+.swal2-popup {
+    background-size: 100% 100% !important;
+    }
+
+.swal2-close {
+    box-shadow: none !important; 
+}
+
