@@ -461,17 +461,17 @@
       <script>
         function dropdown(element) {
           
-                    if (!element.nextSibling.nextSibling.childNodes[1].style.display || element.nextSibling.nextSibling.childNodes[1].style.display == 'none') {
-            element.nextSibling.nextSibling.childNodes[1].style.display = "flex"
-            element.nextSibling.nextSibling.childNodes[1].classList.add('dropdown')
-            element.nextSibling.nextSibling.childNodes[1].classList.remove('hidden')
-            element.childNodes[3].childNodes[1].style.transform = "rotate(180deg)"
+                    if (!element.nextSibling.childNodes[0].style.display || element.nextSibling.childNodes[0].style.display == 'none') {
+            element.nextSibling.childNodes[0].style.display = "flex"
+            element.nextSibling.childNodes[0].classList.add('dropdown')
+            element.nextSibling.childNodes[0].classList.remove('hidden')
+            element.childNodes[1].childNodes[0].style.transform = "rotate(180deg)"
             element.parentElement.classList.add('mb-3')
           } else {
-            element.nextSibling.nextSibling.childNodes[1].style.display = "none"
-            element.nextSibling.nextSibling.childNodes[1].classList.remove('dropdown')
-            element.nextSibling.nextSibling.childNodes[1].classList.add('hidden')
-            element.childNodes[3].childNodes[1].style.transform = "rotate(0deg)"
+            element.nextSibling.childNodes[0].style.display = "none"
+            element.nextSibling.childNodes[0].classList.remove('dropdown')
+            element.nextSibling.childNodes[0].classList.add('hidden')
+            element.childNodes[1].childNodes[0].style.transform = "rotate(0deg)"
             element.parentElement.classList.remove('mb-3')
           }
         }
