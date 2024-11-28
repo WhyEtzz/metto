@@ -361,7 +361,7 @@
         <img src="resource/image/contact.png" alt="Image by freepik">
       </div>
       <div class="flex flex-col w-11/12 lg:w-2/3 ml-2lg:ml-5 justify-center">
-        <form action="http://localhost:8080/pesan" class="flex flex-col" method="post" enctype="multipart/form-data" >
+        <form class="flex flex-col" method="post" enctype="multipart/form-data" >
           <span for="nama" class="my-2">Nama :</span>
           <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda"  class="w-full p-2 rounded-lg focus:border-b-green-950 focus:border-b-2 focus:outline-none transition-all duration-700" required>
           <span for="nomor" class="my-2">Nomor :</span>
@@ -525,7 +525,7 @@
         form.append('pesan', document.querySelector('#pesan').value)
         console.log(form)
 
-        fetch("https://meto-back.vercel.app/", {
+        fetch("https://elegant-croissant-f26145.netlify.app/", {
           method: "POST",
           data: form
         }).then(response => {
