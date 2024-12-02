@@ -525,7 +525,7 @@
         form.append('pesan', document.querySelector('#pesan').value)
         console.log(form)
 
-        fetch("https://meto-back.vercel.app/", {
+        fetch("https://api.metto.id/", {
           method: "POST",
           body: form,
           headers: {
